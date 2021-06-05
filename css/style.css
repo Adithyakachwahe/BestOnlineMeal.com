@@ -1,0 +1,237 @@
+/* CSS RESAT */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+}
+/* CSS VARIABLES */
+:root{
+    --navbar-height:50px
+}
+
+/* LOGO AND IMAGES */
+#logo{
+
+}
+#logo img{
+    margin: 15px 15px;
+    height: 215px;
+    width: 225px;
+}
+
+/* NAVIGATION BAR */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;         
+    position: sticky;              /* after seting nav set pos retaive */
+    top: 0;
+    height: 9rem
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+   list-style: none;
+   font-size: 1.9rem;
+}
+#navbar ul li a{
+    padding: 26px;
+    text-decoration: none;
+    /* border: 2px solid blue; */
+    border-radius: 65px;
+    padding: 15px 24px;
+    margin: 16px;
+    color: white;
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+}
+  
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 900px;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    text-align: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url('../images/bg3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+    opacity: 0.87;
+}
+#home h1{
+    color: black;
+    
+}
+#home p{
+    color: black;
+    font-size: 1.5rem;
+    margin: 10px;
+    width: 45rem;
+}
+
+/* services section */
+#services{
+    margin: 30px;
+    display: flex;
+
+}
+#services .box{
+    border: 3px solid brown;
+    text-align: center;
+    /* margin: -270px 6px; */
+    border-radius: 30px;
+    height: 475px;
+    background-color: rgb(230, 219, 219);
+    margin: 0 6px;
+}
+#services .box img{
+ height: 250px;
+ padding: 2px 2px;
+ margin: 2px 2px;
+
+}
+#services p{
+    font-size: 1.3rem;
+}
+
+/* CLIENTS SECTION */
+#client-section{
+    
+position: relative;
+/* border: 2px solid brown; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../images/contact.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 99%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 130px;
+}
+.class-item{
+    padding: 34px;
+}
+
+/* CONTACT US section */
+
+ #contact{
+     position: relative;
+ }
+ #contact::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background-image: url('../images/contact4.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+ }
+ #contact-box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: -webkit-right;
+     padding: 25px;
+ }
+ #contact-box label{
+    font-size: 1.7rem;     
+ }
+
+ #contact-box input, #contact-box textarea{
+    width: 50rem;
+    padding: 10px 25px;
+    border-radius: 17px;
+    margin: 7px 10px;
+    border: 3px solid #060649;
+    text-align: center;
+    font-size: 1.4rem;
+}
+ }
+ /* FOOTER SECTION */
+ footer{
+     background: black;
+     color:white ;
+     padding:3px 20px ;
+     font-size: 1.5rem;
+     text-align:center;
+     align-content: center;
+ }
+
+/* UTILITI */
+
+.h-primary{
+    font-size: 2.7rem;
+    padding: 50px;
+    width: 900px;
+}
+.h-secendary{
+    font-size: 2.7rem;
+     padding: 7px;
+     margin: 7px;
+}
+.center{
+   text-align: center;
+   font-size: 2.5rem;
+    
+}
+
+.btn{
+    border: 2px solid black;
+    padding: 15px 54px;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    margin: 10px;
+}
+.btn:hover{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    
+}
